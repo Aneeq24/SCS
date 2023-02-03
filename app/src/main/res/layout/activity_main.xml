@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/default_text"
+                android:textAlignment="center"
+                android:textSize="64sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="4dp"
+                android:text="bpm"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
+
+            <com.esh.HeartbeatView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></com.esh.HeartbeatView>
+        </RelativeLayout>
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!--This will be opened during RHR measurement-->
+
+    <LinearLayout
+        android:id="@+id/ll_measuringRHR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTertiary"
+            android:padding="6dp"
+            android:text="Instructions:
+Gently place the tip of your finger on the camera to completely covers the lens.
+It is not necessary to cover the flash. Hold your phone steady."
+            android:textColor="@color/colorSecondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="Ideal Resting Heart Rates range:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="60 to 100 bpm"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="In a healthier heart achieved via regular exercise, this can drop to around 40 bpm."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorTertiary"
+            android:padding="6dp"
+            android:text="Warning:
+Pressing too hard on the lens or poor lighting conditions can affect the accuracy of measurements.
+You can remeasure your heart rate by clicking the retry icon in the action bar."
+            android:textColor="@color/colorSecondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!--List Starts here-->
+
+    <LinearLayout
+        android:id="@+id/ll_calculatingTHR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Maximum Heart Rate:  "
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_MHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="MHR"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Heart Rate Reserve:  "
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_HRR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="HRR"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cardList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorTertiary"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Warm Up/Cool Down Zone"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Aerobic (Fat Burn) Zone"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Anaerobic (Fitness\Cardio) Zone"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Extreme Training Zone"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="You need to cool down!"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

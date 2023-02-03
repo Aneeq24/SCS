@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Heartbeat</string>
+    <string name="default_text">--</string>
+    <string name="measure">Measure</string>
+    <string name="retry">Retry</string>
+
+    <string name="enter_your_Age">Enter your Age:</string>
+    <string name="age">age</string>
+    <string name="resting_Heart_Rate">Resting Heart Rate:</string>
+    <string name="get_RHR">get RHR</string>
+    <string name="check_workout">Check Workout Efficiency</string>
+
+</resources>

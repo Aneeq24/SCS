@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_red_icon.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\red_icon.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_background.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\home_background.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_ok.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\ic_ok.xml"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_icon.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\green_icon.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_refresh.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\ic_refresh.xml"
+    }
+]
