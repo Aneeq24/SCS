@@ -34,7 +34,6 @@
         <activity
             android:name="com.esh.Home"
             android:exported="true"
-            android:label="Heartbeat"
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +43,7 @@
         </activity>
         <activity
             android:name="com.esh.MainActivity"
-            android:label="Measure"
+            android:label="@string/measure"
             android:parentActivityName="com.esh.Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

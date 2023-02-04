@@ -1321,9 +1321,16 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string age
 string androidx_startup
 string app_name
+string check_workout
 string default_text
+string enter_your_Age
+string get_RHR
+string measure
+string resting_Heart_Rate
+string retry
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

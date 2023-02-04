@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         calculatingTHR = true;
 
         maximumHeartRate = 220 - age;
-        TextView MHRTextView = (TextView) findViewById(R.id.tv_MHR);
+        TextView MHRTextView = findViewById(R.id.tv_MHR);
         MHRTextView.setText(String.valueOf(maximumHeartRate));
 
         heartRateReserve = maximumHeartRate - rhr;
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
             int width = size.width;
             int height = size.height;
 
-            int imgAvg = ImageProcessing.decodeYUV420SPtoRedAvg(data.clone(), height, width);
+            int imgAvg = MModel.decodeYUV420SPtoRedAvg(data.clone(), height, width);
             Log.i(TAG, "imgAvg=" + imgAvg);
             if (imgAvg == 0 || imgAvg == 255) {
                 processing.set(false);
