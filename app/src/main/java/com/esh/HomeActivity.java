@@ -42,9 +42,9 @@ public class HomeActivity extends AppCompatActivity {
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensorManager.getDefaultSensor(Sensor.TYPE_HEART_BEAT) != null) {
-            ageEditText.setText("HEART_BEAT supports");
+//            ageEditText.setText("HEART_BEAT supports");
         } else {
-            ageEditText.setText("no HEART_BEAT supports");
+//            ageEditText.setText("no HEART_BEAT supports");
         }
 
         if (savedInstanceState != null) {

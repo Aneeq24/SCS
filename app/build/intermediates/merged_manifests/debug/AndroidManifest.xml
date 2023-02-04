@@ -13,6 +13,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
 
     <permission
         android:name="com.esh.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -32,7 +33,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.esh.Home"
+            android:name="com.esh.HomeActivity"
             android:exported="true"
             android:launchMode="singleTop" >
             <intent-filter>
@@ -44,10 +45,10 @@
         <activity
             android:name="com.esh.MainActivity"
             android:label="@string/measure"
-            android:parentActivityName="com.esh.Home" >
+            android:parentActivityName="com.esh.HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home" />
+                android:value=".HomeActivity" />
         </activity>
 
         <provider

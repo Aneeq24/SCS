@@ -32,16 +32,16 @@
         "source": "E:\\Heartbeat\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Heartbeat\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
         "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_ok.xml.flat",
         "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\ic_ok.xml"
     },
     {
         "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_icon.png.flat",
         "source": "E:\\Heartbeat\\app\\src\\main\\res\\drawable\\green_icon.png"
-    },
-    {
-        "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "E:\\Heartbeat\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "E:\\Heartbeat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
